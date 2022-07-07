@@ -14,13 +14,14 @@ package com.digitalthinking.common;
  * @author sotobotero
  */
 public class Person {
-    
+
     private long id;
-    private String name;
+    private String names;
     private String surname;
     private String documentNumber;
     private String phone;
     private String address;
+    private String email;
 
     public long getId() {
         return id;
@@ -30,12 +31,20 @@ public class Person {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNames() {
+        return names;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNames(String names) {
+        this.names = names;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getSurname() {
@@ -69,6 +78,6 @@ public class Person {
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    
+
+
 }
